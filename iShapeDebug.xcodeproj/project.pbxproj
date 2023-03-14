@@ -8,18 +8,44 @@
 
 /* Begin PBXBuildFile section */
 		54649BA829BF5FAB00A0D526 /* iShapeDebugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BA729BF5FAB00A0D526 /* iShapeDebugApp.swift */; };
-		54649BAA29BF5FAB00A0D526 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BA929BF5FAB00A0D526 /* ContentView.swift */; };
+		54649BAA29BF5FAB00A0D526 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BA929BF5FAB00A0D526 /* MainView.swift */; };
 		54649BAC29BF5FAD00A0D526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54649BAB29BF5FAD00A0D526 /* Assets.xcassets */; };
 		54649BB029BF5FAD00A0D526 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54649BAF29BF5FAD00A0D526 /* Preview Assets.xcassets */; };
+		54649BB829BF640300A0D526 /* Main+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BB729BF640300A0D526 /* Main+ViewModel.swift */; };
+		54649BBB29BF650B00A0D526 /* WorkSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BBA29BF650B00A0D526 /* WorkSpace.swift */; };
+		54649BBE29BF9A5D00A0D526 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BBD29BF9A5D00A0D526 /* Matrix.swift */; };
+		54649BC029BF9A6B00A0D526 /* CGPoint+Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BBF29BF9A6B00A0D526 /* CGPoint+Vector.swift */; };
+		54649BC429BFA0C300A0D526 /* ContourEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BC329BFA0C300A0D526 /* ContourEditor.swift */; };
+		54649BC629BFA0D300A0D526 /* ContourEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BC529BFA0D300A0D526 /* ContourEditorView.swift */; };
+		54DF340929C05EB200ED1BF8 /* TriangulationSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340829C05EB200ED1BF8 /* TriangulationSpace.swift */; };
+		54DF340B29C05EFE00ED1BF8 /* Triangulation+ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340A29C05EFE00ED1BF8 /* Triangulation+ViewModel.swift */; };
+		54DF340D29C05FD600ED1BF8 /* CGSize+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340C29C05FD600ED1BF8 /* CGSize+Compare.swift */; };
+		54DF340F29C0643E00ED1BF8 /* TriangulationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340E29C0643E00ED1BF8 /* TriangulationData.swift */; };
+		54DF341529C079B300ED1BF8 /* iShape in Frameworks */ = {isa = PBXBuildFile; productRef = 54DF341429C079B300ED1BF8 /* iShape */; };
+		54DF342C29C0844300ED1BF8 /* ShapeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF342B29C0844300ED1BF8 /* ShapeEditor.swift */; };
+		54DF342E29C085B900ED1BF8 /* ShapeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF342D29C085B900ED1BF8 /* ShapeEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		54649BA429BF5FAB00A0D526 /* iShapeDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShapeDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54649BA729BF5FAB00A0D526 /* iShapeDebugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShapeDebugApp.swift; sourceTree = "<group>"; };
-		54649BA929BF5FAB00A0D526 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		54649BA929BF5FAB00A0D526 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		54649BAB29BF5FAD00A0D526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54649BAD29BF5FAD00A0D526 /* iShapeDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iShapeDebug.entitlements; sourceTree = "<group>"; };
 		54649BAF29BF5FAD00A0D526 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54649BB729BF640300A0D526 /* Main+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Main+ViewModel.swift"; sourceTree = "<group>"; };
+		54649BBA29BF650B00A0D526 /* WorkSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkSpace.swift; sourceTree = "<group>"; };
+		54649BBD29BF9A5D00A0D526 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		54649BBF29BF9A6B00A0D526 /* CGPoint+Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Vector.swift"; sourceTree = "<group>"; };
+		54649BC329BFA0C300A0D526 /* ContourEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContourEditor.swift; sourceTree = "<group>"; };
+		54649BC529BFA0D300A0D526 /* ContourEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContourEditorView.swift; sourceTree = "<group>"; };
+		54DF340829C05EB200ED1BF8 /* TriangulationSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangulationSpace.swift; sourceTree = "<group>"; };
+		54DF340A29C05EFE00ED1BF8 /* Triangulation+ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Triangulation+ViewModel.swift"; sourceTree = "<group>"; };
+		54DF340C29C05FD600ED1BF8 /* CGSize+Compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Compare.swift"; sourceTree = "<group>"; };
+		54DF340E29C0643E00ED1BF8 /* TriangulationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangulationData.swift; sourceTree = "<group>"; };
+		54DF341129C0673300ED1BF8 /* iShape */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iShape; path = ../iShape; sourceTree = "<group>"; };
+		54DF342B29C0844300ED1BF8 /* ShapeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeEditor.swift; sourceTree = "<group>"; };
+		54DF342D29C085B900ED1BF8 /* ShapeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeEditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54DF341529C079B300ED1BF8 /* iShape in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -36,8 +63,10 @@
 		54649B9B29BF5FAB00A0D526 = {
 			isa = PBXGroup;
 			children = (
+				54DF341029C0673300ED1BF8 /* Packages */,
 				54649BA629BF5FAB00A0D526 /* iShapeDebug */,
 				54649BA529BF5FAB00A0D526 /* Products */,
+				54DF341329C079B300ED1BF8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,8 +81,12 @@
 		54649BA629BF5FAB00A0D526 /* iShapeDebug */ = {
 			isa = PBXGroup;
 			children = (
+				54DF340729C05E9000ED1BF8 /* Space */,
+				54649BC229BFA0AA00A0D526 /* ShapeEditor */,
+				54649BC129BF9FE200A0D526 /* Triangulation */,
+				54649BBC29BF9A1900A0D526 /* Math */,
+				54649BB629BF634E00A0D526 /* Main */,
 				54649BA729BF5FAB00A0D526 /* iShapeDebugApp.swift */,
-				54649BA929BF5FAB00A0D526 /* ContentView.swift */,
 				54649BAB29BF5FAD00A0D526 /* Assets.xcassets */,
 				54649BAD29BF5FAD00A0D526 /* iShapeDebug.entitlements */,
 				54649BAE29BF5FAD00A0D526 /* Preview Content */,
@@ -67,6 +100,69 @@
 				54649BAF29BF5FAD00A0D526 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54649BB629BF634E00A0D526 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				54649BA929BF5FAB00A0D526 /* MainView.swift */,
+				54649BB729BF640300A0D526 /* Main+ViewModel.swift */,
+				54649BBA29BF650B00A0D526 /* WorkSpace.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		54649BBC29BF9A1900A0D526 /* Math */ = {
+			isa = PBXGroup;
+			children = (
+				54649BBD29BF9A5D00A0D526 /* Matrix.swift */,
+				54649BBF29BF9A6B00A0D526 /* CGPoint+Vector.swift */,
+				54DF340C29C05FD600ED1BF8 /* CGSize+Compare.swift */,
+			);
+			path = Math;
+			sourceTree = "<group>";
+		};
+		54649BC129BF9FE200A0D526 /* Triangulation */ = {
+			isa = PBXGroup;
+			children = (
+				54DF340829C05EB200ED1BF8 /* TriangulationSpace.swift */,
+				54DF340A29C05EFE00ED1BF8 /* Triangulation+ViewModel.swift */,
+				54DF340E29C0643E00ED1BF8 /* TriangulationData.swift */,
+			);
+			path = Triangulation;
+			sourceTree = "<group>";
+		};
+		54649BC229BFA0AA00A0D526 /* ShapeEditor */ = {
+			isa = PBXGroup;
+			children = (
+				54649BC329BFA0C300A0D526 /* ContourEditor.swift */,
+				54649BC529BFA0D300A0D526 /* ContourEditorView.swift */,
+				54DF342B29C0844300ED1BF8 /* ShapeEditor.swift */,
+				54DF342D29C085B900ED1BF8 /* ShapeEditorView.swift */,
+			);
+			path = ShapeEditor;
+			sourceTree = "<group>";
+		};
+		54DF340729C05E9000ED1BF8 /* Space */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Space;
+			sourceTree = "<group>";
+		};
+		54DF341029C0673300ED1BF8 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				54DF341129C0673300ED1BF8 /* iShape */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		54DF341329C079B300ED1BF8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +181,9 @@
 			dependencies = (
 			);
 			name = iShapeDebug;
+			packageProductDependencies = (
+				54DF341429C079B300ED1BF8 /* iShape */,
+			);
 			productName = iShapeDebug;
 			productReference = 54649BA429BF5FAB00A0D526 /* iShapeDebug.app */;
 			productType = "com.apple.product-type.application";
@@ -139,8 +238,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				54649BAA29BF5FAB00A0D526 /* ContentView.swift in Sources */,
+				54DF340D29C05FD600ED1BF8 /* CGSize+Compare.swift in Sources */,
+				54649BB829BF640300A0D526 /* Main+ViewModel.swift in Sources */,
+				54649BBE29BF9A5D00A0D526 /* Matrix.swift in Sources */,
+				54649BAA29BF5FAB00A0D526 /* MainView.swift in Sources */,
+				54649BC029BF9A6B00A0D526 /* CGPoint+Vector.swift in Sources */,
+				54DF340F29C0643E00ED1BF8 /* TriangulationData.swift in Sources */,
+				54DF340B29C05EFE00ED1BF8 /* Triangulation+ViewModel.swift in Sources */,
+				54DF340929C05EB200ED1BF8 /* TriangulationSpace.swift in Sources */,
+				54DF342C29C0844300ED1BF8 /* ShapeEditor.swift in Sources */,
+				54649BBB29BF650B00A0D526 /* WorkSpace.swift in Sources */,
+				54DF342E29C085B900ED1BF8 /* ShapeEditorView.swift in Sources */,
 				54649BA829BF5FAB00A0D526 /* iShapeDebugApp.swift in Sources */,
+				54649BC429BFA0C300A0D526 /* ContourEditor.swift in Sources */,
+				54649BC629BFA0D300A0D526 /* ContourEditorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,20 +380,22 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nail.iShapeDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,20 +420,22 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nail.iShapeDebug;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -354,6 +469,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		54DF341429C079B300ED1BF8 /* iShape */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iShape;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54649B9C29BF5FAB00A0D526 /* Project object */;
 }
