@@ -9,51 +9,53 @@ import SwiftUI
 
 extension MainView {
 
-    struct MenuItem: Identifiable {
-        
-        let id: Int
-        let workSpace: WorkSpace
-        var title: String
-        
-        init(id: Int, workSpace: WorkSpace) {
-            self.id = id
-            self.workSpace = workSpace
-            self.title = workSpace.rawValue
-        }
-        
-    }
-    
-    
     final class ViewModel: ObservableObject {
 
-        var items: [MenuItem] = [
-            MenuItem(id: 0, workSpace: .tringulation),
-            MenuItem(id: 1, workSpace: .clipping)
-        ]
+        private let fixSpace = FixSpace()
+        private let triangulationSpace = TriangulationSpace()
+        private let tesselationSpace = TesselationSpace()
+        private let cornerSpace = CornerSpace()
+        private let roundContourSpace = RoundContourSpace()
+        private let splitSpace = SplitSpace()
+        private let anchorSpace = AnchorSpace()
+        
+        var spaces: [WorkSpace] = [.fix, .tringulation, .tesselation, .corner, .roundContour, .split, .anchor]
+        private (set) var index = PersistInt(key: "WorkSpaceIndex", nilValue: WorkSpace.fix.rawValue)
+        
         
         @Published
-        var selection: Int = 0 {
+        var selection: WorkSpace = .fix {
             didSet {
-                let item = items.first(where: { $0.id == selection })
+                index.value = selection.rawValue
             }
         }
 
         @ViewBuilder var contentView: some View {
-            let item = items.first(where: { $0.id == selection })
-            
-            switch item?.workSpace {
+            switch selection {
+            case .fix:
+                fixSpace.makeView()
             case .tringulation:
-                TriangulationSpace()
-            case .clipping:
-                Text("clipping")
-            case .earhquake:
-                Text("earhquake")
-            case .none:
-                Text("earhquake")
+                triangulationSpace.makeView()
+            case .tesselation:
+                tesselationSpace.makeView()
+            case .corner:
+                cornerSpace.makeView()
+            case .roundContour:
+                roundContourSpace.makeView()
+            case .split:
+                splitSpace.makeView()
+            case .anchor:
+                anchorSpace.makeView()
             }
         }
         
+        func onAppear() {
+            if index.value != selection.rawValue {
+                if let last = WorkSpace(rawValue: index.value) {
+                    selection = last
+                }
+            }
+        }
     }
-    
 }
 

@@ -21,9 +21,10 @@ struct TriangulationData {
             Point(x: 10, y: 10),
             Point(x: 10, y: -10)
         ])),
+        
         Test(id: 1, shape: Shape(contour: [
             Point(x: -20, y: -20),
-            Point(x: -10, y: 20),
+            Point(x: -20, y: 20),
             Point(x: 20, y: 20),
             Point(x: 20, y: -20)
         ], holes: [

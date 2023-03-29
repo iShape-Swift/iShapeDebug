@@ -23,7 +23,14 @@ struct ContourEditorView: View {
                 Circle()
                     .size(width: 2 * dot.radius, height: 2 * dot.radius)
                     .offset(dot.center)
-                    .foregroundColor(dot.color).gesture(
+                    .foregroundColor(dot.color)
+            }
+            ForEach(dots) { dot in
+                Circle()
+                    .size(width: 2 * dot.touchRadius, height: 2 * dot.touchRadius)
+                    .offset(dot.touchCenter)
+                    .foregroundColor(dot.touchColor)
+                    .gesture(
                         DragGesture()
                             .onChanged { data in
                                 editor.onDrag(id: dot.id, move: data.translation)
@@ -33,6 +40,7 @@ struct ContourEditorView: View {
                             }
                     )
             }
+
         }
     }
     

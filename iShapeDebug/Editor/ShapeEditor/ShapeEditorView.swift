@@ -14,9 +14,8 @@ struct ShapeEditorView: View {
     
     var body: some View {
         ZStack() {
-            editor.hullEditor.makeView()
-            ForEach(editor.holeEditors) { hole in
-                hole.makeView()
+            ForEach(editor.editors) { contour in
+                contour.makeView()
             }
         }
     }

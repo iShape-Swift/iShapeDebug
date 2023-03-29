@@ -7,25 +7,34 @@
 
 import SwiftUI
 
-enum WorkSpace: String {
+enum WorkSpace: Int, Identifiable {
 
+    var id: WorkSpace { self }
     
-    var id: String { rawValue }
-    
+    case fix
     case tringulation
-    case clipping
-    case earhquake
+    case tesselation
+    case corner
+    case roundContour
+    case split
+    case anchor
     
-    var view: any View {
+    var title: String {
         switch self {
+        case .fix:
+            return "fix"
         case .tringulation:
-            return Text(self.rawValue)
-        case .clipping:
-            return Text(self.rawValue)
-        case .earhquake:
-            return Text(self.rawValue)
+            return "tringulation"
+        case .tesselation:
+            return "tesselation"
+        case .corner:
+            return "corner"
+        case .roundContour:
+            return "roundContour"
+        case .split:
+            return "split"
+        case .anchor:
+            return "anchor"
         }
     }
-    
-    
 }

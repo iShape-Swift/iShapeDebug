@@ -14,11 +14,16 @@ struct MainView: View {
     
     var body: some View {
         NavigationSplitView {
-            List($viewModel.items, selection: $viewModel.selection) { $item in
-                NavigationLink(item.title, value: item.id)
+            List($viewModel.spaces, selection: $viewModel.selection) { $space in
+                NavigationLink(space.title, value: space)
             }
         } detail: {
             viewModel.contentView
-        }.navigationTitle("iShape")
+        }
+        .navigationTitle("Title")
+        .navigationSubtitle("Title")
+        .onAppear() {
+            viewModel.onAppear()
+        }
     }
 }
