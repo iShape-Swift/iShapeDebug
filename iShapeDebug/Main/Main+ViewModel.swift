@@ -16,10 +16,11 @@ extension MainView {
         private let tesselationSpace = TesselationSpace()
         private let cornerSpace = CornerSpace()
         private let roundContourSpace = RoundContourSpace()
+        private let convexSpace = ConvexSpace()
         private let splitSpace = SplitSpace()
         private let anchorSpace = AnchorSpace()
         
-        var spaces: [WorkSpace] = [.fix, .tringulation, .tesselation, .corner, .roundContour, .split, .anchor]
+        var spaces: [WorkSpace] = [.fix, .tringulation, .tesselation, .corner, .roundContour, .convex, .split, .anchor]
         private (set) var index = PersistInt(key: "WorkSpaceIndex", nilValue: WorkSpace.fix.rawValue)
         
         
@@ -42,6 +43,8 @@ extension MainView {
                 cornerSpace.makeView()
             case .roundContour:
                 roundContourSpace.makeView()
+            case .convex:
+                convexSpace.makeView()
             case .split:
                 splitSpace.makeView()
             case .anchor:

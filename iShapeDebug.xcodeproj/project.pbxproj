@@ -47,6 +47,10 @@
 		54DF341529C079B300ED1BF8 /* iShape in Frameworks */ = {isa = PBXBuildFile; productRef = 54DF341429C079B300ED1BF8 /* iShape */; };
 		54DF342C29C0844300ED1BF8 /* ShapeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF342B29C0844300ED1BF8 /* ShapeEditor.swift */; };
 		54DF342E29C085B900ED1BF8 /* ShapeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF342D29C085B900ED1BF8 /* ShapeEditorView.swift */; };
+		54E4FFB229E1A35000804447 /* iNetBox in Frameworks */ = {isa = PBXBuildFile; productRef = 54E4FFB129E1A35000804447 /* iNetBox */; };
+		54E4FFB429E1A35000804447 /* iSpace in Frameworks */ = {isa = PBXBuildFile; productRef = 54E4FFB329E1A35000804447 /* iSpace */; };
+		54E4FFB729E1A50D00804447 /* ConvexSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4FFB629E1A50D00804447 /* ConvexSpace.swift */; };
+		54E4FFB929E1A51B00804447 /* ConvexSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4FFB829E1A51B00804447 /* ConvexSpaceView.swift */; };
 		54EF051829C588D30099AB84 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF051729C588D30099AB84 /* Color+hex.swift */; };
 		54EF051A29C588DF0099AB84 /* ColorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF051929C588DF0099AB84 /* ColorStore.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +98,10 @@
 		54DF341129C0673300ED1BF8 /* iShape */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iShape; path = ../iShape; sourceTree = "<group>"; };
 		54DF342B29C0844300ED1BF8 /* ShapeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeEditor.swift; sourceTree = "<group>"; };
 		54DF342D29C085B900ED1BF8 /* ShapeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeEditorView.swift; sourceTree = "<group>"; };
+		54E4FFAF29E1A31100804447 /* iSpace */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iSpace; path = ../../iBox/iSpace; sourceTree = "<group>"; };
+		54E4FFB029E1A32B00804447 /* iNetBox */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iNetBox; path = ../../iBox/iNetBox; sourceTree = "<group>"; };
+		54E4FFB629E1A50D00804447 /* ConvexSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexSpace.swift; sourceTree = "<group>"; };
+		54E4FFB829E1A51B00804447 /* ConvexSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexSpaceView.swift; sourceTree = "<group>"; };
 		54EF051729C588D30099AB84 /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
 		54EF051929C588DF0099AB84 /* ColorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,7 +111,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E4FFB229E1A35000804447 /* iNetBox in Frameworks */,
 				54DF341529C079B300ED1BF8 /* iShape in Frameworks */,
+				54E4FFB429E1A35000804447 /* iSpace in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +312,8 @@
 			isa = PBXGroup;
 			children = (
 				54DF341129C0673300ED1BF8 /* iShape */,
+				54E4FFAF29E1A31100804447 /* iSpace */,
+				54E4FFB029E1A32B00804447 /* iNetBox */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -311,6 +323,15 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		54E4FFB529E1A4F700804447 /* Convex */ = {
+			isa = PBXGroup;
+			children = (
+				54E4FFB629E1A50D00804447 /* ConvexSpace.swift */,
+				54E4FFB829E1A51B00804447 /* ConvexSpaceView.swift */,
+			);
+			path = Convex;
 			sourceTree = "<group>";
 		};
 		54EF051629C588C10099AB84 /* Color */ = {
@@ -325,6 +346,7 @@
 		54EF051B29C594610099AB84 /* Space */ = {
 			isa = PBXGroup;
 			children = (
+				54E4FFB529E1A4F700804447 /* Convex */,
 				54C1E35529CF475500C304CE /* Anchor */,
 				54DA4EDE29CB1AB70055B5C0 /* Split */,
 				54DA4ED929CADBD90055B5C0 /* RoundContour */,
@@ -354,6 +376,8 @@
 			name = iShapeDebug;
 			packageProductDependencies = (
 				54DF341429C079B300ED1BF8 /* iShape */,
+				54E4FFB129E1A35000804447 /* iNetBox */,
+				54E4FFB329E1A35000804447 /* iSpace */,
 			);
 			productName = iShapeDebug;
 			productReference = 54649BA429BF5FAB00A0D526 /* iShapeDebug.app */;
@@ -444,9 +468,11 @@
 				54D8AEE229C5ED3400D78857 /* Edge.swift in Sources */,
 				54C1E35729CF478900C304CE /* AnchorSpace.swift in Sources */,
 				54D8AEE929C5F00000D78857 /* TestNavigatorView.swift in Sources */,
+				54E4FFB729E1A50D00804447 /* ConvexSpace.swift in Sources */,
 				54C1E35C29CF484A00C304CE /* VectorShape.swift in Sources */,
 				54DB42BD29C4DAF300072E51 /* FixSpaceView.swift in Sources */,
 				54DA4EE229CB1AD60055B5C0 /* SplitSpaceView.swift in Sources */,
+				54E4FFB929E1A51B00804447 /* ConvexSpaceView.swift in Sources */,
 				54DBBC0A29C891CE0099F8B7 /* TesselationSpaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,6 +696,14 @@
 		54DF341429C079B300ED1BF8 /* iShape */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = iShape;
+		};
+		54E4FFB129E1A35000804447 /* iNetBox */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iNetBox;
+		};
+		54E4FFB329E1A35000804447 /* iSpace */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iSpace;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

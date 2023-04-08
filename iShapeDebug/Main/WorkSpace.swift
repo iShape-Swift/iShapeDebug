@@ -16,6 +16,7 @@ enum WorkSpace: Int, Identifiable {
     case tesselation
     case corner
     case roundContour
+    case convex
     case split
     case anchor
     
@@ -31,6 +32,8 @@ enum WorkSpace: Int, Identifiable {
             return "corner"
         case .roundContour:
             return "roundContour"
+        case .convex:
+            return "convex"
         case .split:
             return "split"
         case .anchor:

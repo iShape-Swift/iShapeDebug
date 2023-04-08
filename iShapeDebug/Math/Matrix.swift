@@ -40,6 +40,12 @@ struct Matrix {
         toWorld = toScreen.inverse
     }
 
+    
+    @inlinable
+    func screen(word l: CGFloat) -> CGFloat {
+        CGFloat(toScreen.columns.0.x) * l
+    }
+    
     @inlinable
     func screen(wordPoint p: CGPoint) -> CGPoint {
         let v = simd_float3(Float(p.x), Float(p.y), 1)
