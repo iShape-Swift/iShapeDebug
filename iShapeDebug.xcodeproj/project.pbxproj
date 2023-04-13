@@ -33,6 +33,8 @@
 		54D8D26929C9A8C800EA6F66 /* PointsEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D8D26829C9A8C800EA6F66 /* PointsEditorView.swift */; };
 		54D8D26C29C9A90000EA6F66 /* EditorDot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D8D26B29C9A90000EA6F66 /* EditorDot.swift */; };
 		54D8D26E29C9D0E800EA6F66 /* Dot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D8D26D29C9D0E800EA6F66 /* Dot.swift */; };
+		54D9A75229E2981C0022A971 /* ConvexAndCircleSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D9A75129E2981C0022A971 /* ConvexAndCircleSpace.swift */; };
+		54D9A75429E2982C0022A971 /* ConvexAndCircleSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D9A75329E2982C0022A971 /* ConvexAndCircleSpaceView.swift */; };
 		54DA4EDB29CADBFB0055B5C0 /* RoundContourSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DA4EDA29CADBFB0055B5C0 /* RoundContourSpace.swift */; };
 		54DA4EDD29CADC070055B5C0 /* RoundContourSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DA4EDC29CADC070055B5C0 /* RoundContourSpaceView.swift */; };
 		54DA4EE029CB1AC90055B5C0 /* SplitSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DA4EDF29CB1AC90055B5C0 /* SplitSpace.swift */; };
@@ -41,6 +43,8 @@
 		54DB42BF29C4DB1400072E51 /* FixSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DB42BE29C4DB1400072E51 /* FixSpace.swift */; };
 		54DBBC0829C891BB0099F8B7 /* TesselationSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DBBC0729C891BB0099F8B7 /* TesselationSpace.swift */; };
 		54DBBC0A29C891CE0099F8B7 /* TesselationSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DBBC0929C891CE0099F8B7 /* TesselationSpaceView.swift */; };
+		54DCB37829E426B70024CDB8 /* CircleCollideSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCB37729E426B70024CDB8 /* CircleCollideSpace.swift */; };
+		54DCB37A29E426C20024CDB8 /* CircleCollideSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DCB37929E426C20024CDB8 /* CircleCollideSpaceView.swift */; };
 		54DF340929C05EB200ED1BF8 /* TriangulationSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340829C05EB200ED1BF8 /* TriangulationSpace.swift */; };
 		54DF340D29C05FD600ED1BF8 /* CGSize+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340C29C05FD600ED1BF8 /* CGSize+Compare.swift */; };
 		54DF340F29C0643E00ED1BF8 /* TriangulationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340E29C0643E00ED1BF8 /* TriangulationData.swift */; };
@@ -84,6 +88,8 @@
 		54D8D26829C9A8C800EA6F66 /* PointsEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointsEditorView.swift; sourceTree = "<group>"; };
 		54D8D26B29C9A90000EA6F66 /* EditorDot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorDot.swift; sourceTree = "<group>"; };
 		54D8D26D29C9D0E800EA6F66 /* Dot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dot.swift; sourceTree = "<group>"; };
+		54D9A75129E2981C0022A971 /* ConvexAndCircleSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexAndCircleSpace.swift; sourceTree = "<group>"; };
+		54D9A75329E2982C0022A971 /* ConvexAndCircleSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexAndCircleSpaceView.swift; sourceTree = "<group>"; };
 		54DA4EDA29CADBFB0055B5C0 /* RoundContourSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundContourSpace.swift; sourceTree = "<group>"; };
 		54DA4EDC29CADC070055B5C0 /* RoundContourSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundContourSpaceView.swift; sourceTree = "<group>"; };
 		54DA4EDF29CB1AC90055B5C0 /* SplitSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitSpace.swift; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 		54DB42BE29C4DB1400072E51 /* FixSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixSpace.swift; sourceTree = "<group>"; };
 		54DBBC0729C891BB0099F8B7 /* TesselationSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesselationSpace.swift; sourceTree = "<group>"; };
 		54DBBC0929C891CE0099F8B7 /* TesselationSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesselationSpaceView.swift; sourceTree = "<group>"; };
+		54DCB37729E426B70024CDB8 /* CircleCollideSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCollideSpace.swift; sourceTree = "<group>"; };
+		54DCB37929E426C20024CDB8 /* CircleCollideSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleCollideSpaceView.swift; sourceTree = "<group>"; };
 		54DF340829C05EB200ED1BF8 /* TriangulationSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangulationSpace.swift; sourceTree = "<group>"; };
 		54DF340C29C05FD600ED1BF8 /* CGSize+Compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Compare.swift"; sourceTree = "<group>"; };
 		54DF340E29C0643E00ED1BF8 /* TriangulationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangulationData.swift; sourceTree = "<group>"; };
@@ -272,6 +280,15 @@
 			path = Editor;
 			sourceTree = "<group>";
 		};
+		54D9A75029E298090022A971 /* ConvexAndCircle */ = {
+			isa = PBXGroup;
+			children = (
+				54D9A75129E2981C0022A971 /* ConvexAndCircleSpace.swift */,
+				54D9A75329E2982C0022A971 /* ConvexAndCircleSpaceView.swift */,
+			);
+			path = ConvexAndCircle;
+			sourceTree = "<group>";
+		};
 		54DA4ED929CADBD90055B5C0 /* RoundContour */ = {
 			isa = PBXGroup;
 			children = (
@@ -306,6 +323,15 @@
 				54DBBC0929C891CE0099F8B7 /* TesselationSpaceView.swift */,
 			);
 			path = Tesselation;
+			sourceTree = "<group>";
+		};
+		54DCB37629E426A80024CDB8 /* CircleCollide */ = {
+			isa = PBXGroup;
+			children = (
+				54DCB37729E426B70024CDB8 /* CircleCollideSpace.swift */,
+				54DCB37929E426C20024CDB8 /* CircleCollideSpaceView.swift */,
+			);
+			path = CircleCollide;
 			sourceTree = "<group>";
 		};
 		54DF341029C0673300ED1BF8 /* Packages */ = {
@@ -346,6 +372,8 @@
 		54EF051B29C594610099AB84 /* Space */ = {
 			isa = PBXGroup;
 			children = (
+				54DCB37629E426A80024CDB8 /* CircleCollide */,
+				54D9A75029E298090022A971 /* ConvexAndCircle */,
 				54E4FFB529E1A4F700804447 /* Convex */,
 				54C1E35529CF475500C304CE /* Anchor */,
 				54DA4EDE29CB1AB70055B5C0 /* Split */,
@@ -466,6 +494,9 @@
 				54DB42BF29C4DB1400072E51 /* FixSpace.swift in Sources */,
 				54649BC629BFA0D300A0D526 /* ContourEditorView.swift in Sources */,
 				54D8AEE229C5ED3400D78857 /* Edge.swift in Sources */,
+				54DCB37829E426B70024CDB8 /* CircleCollideSpace.swift in Sources */,
+				54DCB37A29E426C20024CDB8 /* CircleCollideSpaceView.swift in Sources */,
+				54D9A75229E2981C0022A971 /* ConvexAndCircleSpace.swift in Sources */,
 				54C1E35729CF478900C304CE /* AnchorSpace.swift in Sources */,
 				54D8AEE929C5F00000D78857 /* TestNavigatorView.swift in Sources */,
 				54E4FFB729E1A50D00804447 /* ConvexSpace.swift in Sources */,
@@ -474,6 +505,7 @@
 				54DA4EE229CB1AD60055B5C0 /* SplitSpaceView.swift in Sources */,
 				54E4FFB929E1A51B00804447 /* ConvexSpaceView.swift in Sources */,
 				54DBBC0A29C891CE0099F8B7 /* TesselationSpaceView.swift in Sources */,
+				54D9A75429E2982C0022A971 /* ConvexAndCircleSpaceView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

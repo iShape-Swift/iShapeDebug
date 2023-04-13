@@ -41,7 +41,7 @@ final class ContourEditor: ObservableObject, Identifiable {
             let touchCenter = screenPoints[i] - CGPoint(x: touchRadius, y: touchRadius)
             let touchColor: Color = selectedId == i ? .black.opacity(0.15) : .black.opacity(0.05)
             
-            buffer[i] = EditorDot(id: i, center: center, touchCenter: touchCenter, radius: 4, touchRadius: touchRadius, color: .gray, touchColor: touchColor, title: nil)
+            buffer[i] = EditorDot(id: i, center: center, touchCenter: touchCenter, radius: radius, touchRadius: touchRadius, color: .gray, touchColor: touchColor, title: nil)
         }
 
         return buffer
