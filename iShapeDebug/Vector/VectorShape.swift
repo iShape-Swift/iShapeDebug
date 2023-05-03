@@ -18,11 +18,15 @@ struct Vector: Identifiable {
     let b: CGPoint
     let eL: CGPoint
     let eR: CGPoint
+    let stroke: CGFloat
+    let color: Color
     
-    init(id: Int, a: CGPoint, b: CGPoint, dash: Float = 10, angle: Float = Float.pi / 6) {
+    init(id: Int, a: CGPoint, b: CGPoint, stroke: CGFloat = 2, color: Color = .green, dash: Float = 10, angle: Float = Float.pi / 6) {
         self.id = id
         self.a = a
         self.b = b
+        self.stroke = stroke
+        self.color = color
         
         let pA = Point(a)
         let pB = Point(b)

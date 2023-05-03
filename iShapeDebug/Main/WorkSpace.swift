@@ -17,10 +17,13 @@ enum WorkSpace: Int, Identifiable {
     case corner
     case roundContour
     case convex
+    case convexPointTest
+    case convexAndConvex
     case convexAndCircle
     case circleCollide
     case split
     case anchor
+    case mirror
     
     var title: String {
         switch self {
@@ -36,6 +39,10 @@ enum WorkSpace: Int, Identifiable {
             return "roundContour"
         case .convex:
             return "convex"
+        case .convexPointTest:
+            return "convexPointTest"
+        case .convexAndConvex:
+            return "convexAndConvex"
         case .convexAndCircle:
             return "convexAndCircle"
         case .circleCollide:
@@ -44,6 +51,8 @@ enum WorkSpace: Int, Identifiable {
             return "split"
         case .anchor:
             return "anchor"
+        case .mirror:
+            return "mirror"
         }
     }
 }

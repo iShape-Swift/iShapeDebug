@@ -17,6 +17,11 @@
 		54649BC029BF9A6B00A0D526 /* CGPoint+Vector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BBF29BF9A6B00A0D526 /* CGPoint+Vector.swift */; };
 		54649BC429BFA0C300A0D526 /* ContourEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BC329BFA0C300A0D526 /* ContourEditor.swift */; };
 		54649BC629BFA0D300A0D526 /* ContourEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BC529BFA0D300A0D526 /* ContourEditorView.swift */; };
+		549ADE992A0281E5002D5EA8 /* ConvexPointTestSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549ADE982A0281E5002D5EA8 /* ConvexPointTestSpace.swift */; };
+		549ADE9B2A0281ED002D5EA8 /* ConvexPointTestSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549ADE9A2A0281ED002D5EA8 /* ConvexPointTestSpaceView.swift */; };
+		549ADE9D2A028F19002D5EA8 /* ConvexTestSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 549ADE9C2A028F19002D5EA8 /* ConvexTestSolver.swift */; };
+		54B4574929F1573500C672F9 /* MirrorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4574829F1573500C672F9 /* MirrorSpace.swift */; };
+		54B4574B29F1574200C672F9 /* MirrorSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54B4574A29F1574200C672F9 /* MirrorSpaceView.swift */; };
 		54C1E35729CF478900C304CE /* AnchorSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1E35629CF478900C304CE /* AnchorSpace.swift */; };
 		54C1E35929CF479C00C304CE /* AnchorSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1E35829CF479C00C304CE /* AnchorSpaceView.swift */; };
 		54C1E35C29CF484A00C304CE /* VectorShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C1E35B29CF484A00C304CE /* VectorShape.swift */; };
@@ -57,6 +62,9 @@
 		54E4FFB929E1A51B00804447 /* ConvexSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4FFB829E1A51B00804447 /* ConvexSpaceView.swift */; };
 		54EF051829C588D30099AB84 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF051729C588D30099AB84 /* Color+hex.swift */; };
 		54EF051A29C588DF0099AB84 /* ColorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF051929C588DF0099AB84 /* ColorStore.swift */; };
+		54FDDDD029FBD55800082CB1 /* ConvexAndConvexSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDDDCF29FBD55800082CB1 /* ConvexAndConvexSpace.swift */; };
+		54FDDDD229FBD56500082CB1 /* ConvexAndConvexSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDDDD129FBD56500082CB1 /* ConvexAndConvexSpaceView.swift */; };
+		54FDDDD429FBF63400082CB1 /* ColliderSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDDDD329FBF63400082CB1 /* ColliderSolver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +80,11 @@
 		54649BBF29BF9A6B00A0D526 /* CGPoint+Vector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGPoint+Vector.swift"; sourceTree = "<group>"; };
 		54649BC329BFA0C300A0D526 /* ContourEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContourEditor.swift; sourceTree = "<group>"; };
 		54649BC529BFA0D300A0D526 /* ContourEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContourEditorView.swift; sourceTree = "<group>"; };
+		549ADE982A0281E5002D5EA8 /* ConvexPointTestSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexPointTestSpace.swift; sourceTree = "<group>"; };
+		549ADE9A2A0281ED002D5EA8 /* ConvexPointTestSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexPointTestSpaceView.swift; sourceTree = "<group>"; };
+		549ADE9C2A028F19002D5EA8 /* ConvexTestSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexTestSolver.swift; sourceTree = "<group>"; };
+		54B4574829F1573500C672F9 /* MirrorSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorSpace.swift; sourceTree = "<group>"; };
+		54B4574A29F1574200C672F9 /* MirrorSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MirrorSpaceView.swift; sourceTree = "<group>"; };
 		54C1E35629CF478900C304CE /* AnchorSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorSpace.swift; sourceTree = "<group>"; };
 		54C1E35829CF479C00C304CE /* AnchorSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorSpaceView.swift; sourceTree = "<group>"; };
 		54C1E35B29CF484A00C304CE /* VectorShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VectorShape.swift; sourceTree = "<group>"; };
@@ -112,6 +125,9 @@
 		54E4FFB829E1A51B00804447 /* ConvexSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexSpaceView.swift; sourceTree = "<group>"; };
 		54EF051729C588D30099AB84 /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
 		54EF051929C588DF0099AB84 /* ColorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStore.swift; sourceTree = "<group>"; };
+		54FDDDCF29FBD55800082CB1 /* ConvexAndConvexSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexAndConvexSpace.swift; sourceTree = "<group>"; };
+		54FDDDD129FBD56500082CB1 /* ConvexAndConvexSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexAndConvexSpaceView.swift; sourceTree = "<group>"; };
+		54FDDDD329FBF63400082CB1 /* ColliderSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliderSolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +228,25 @@
 				54DF342D29C085B900ED1BF8 /* ShapeEditorView.swift */,
 			);
 			path = ShapeEditor;
+			sourceTree = "<group>";
+		};
+		549ADE972A0281BD002D5EA8 /* CovextPointTest */ = {
+			isa = PBXGroup;
+			children = (
+				549ADE982A0281E5002D5EA8 /* ConvexPointTestSpace.swift */,
+				549ADE9A2A0281ED002D5EA8 /* ConvexPointTestSpaceView.swift */,
+				549ADE9C2A028F19002D5EA8 /* ConvexTestSolver.swift */,
+			);
+			path = CovextPointTest;
+			sourceTree = "<group>";
+		};
+		54B4574729F1572300C672F9 /* Mirror */ = {
+			isa = PBXGroup;
+			children = (
+				54B4574829F1573500C672F9 /* MirrorSpace.swift */,
+				54B4574A29F1574200C672F9 /* MirrorSpaceView.swift */,
+			);
+			path = Mirror;
 			sourceTree = "<group>";
 		};
 		54C1E35529CF475500C304CE /* Anchor */ = {
@@ -372,6 +407,9 @@
 		54EF051B29C594610099AB84 /* Space */ = {
 			isa = PBXGroup;
 			children = (
+				549ADE972A0281BD002D5EA8 /* CovextPointTest */,
+				54FDDDCE29FBD51C00082CB1 /* ConvexAndConvex */,
+				54B4574729F1572300C672F9 /* Mirror */,
 				54DCB37629E426A80024CDB8 /* CircleCollide */,
 				54D9A75029E298090022A971 /* ConvexAndCircle */,
 				54E4FFB529E1A4F700804447 /* Convex */,
@@ -384,6 +422,16 @@
 				54649BC129BF9FE200A0D526 /* Triangulation */,
 			);
 			path = Space;
+			sourceTree = "<group>";
+		};
+		54FDDDCE29FBD51C00082CB1 /* ConvexAndConvex */ = {
+			isa = PBXGroup;
+			children = (
+				54FDDDCF29FBD55800082CB1 /* ConvexAndConvexSpace.swift */,
+				54FDDDD129FBD56500082CB1 /* ConvexAndConvexSpaceView.swift */,
+				54FDDDD329FBF63400082CB1 /* ColliderSolver.swift */,
+			);
+			path = ConvexAndConvex;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -463,13 +511,16 @@
 			files = (
 				54DA4EDD29CADC070055B5C0 /* RoundContourSpaceView.swift in Sources */,
 				54D8AEEC29C5FCA700D78857 /* PersistInt.swift in Sources */,
+				54B4574B29F1574200C672F9 /* MirrorSpaceView.swift in Sources */,
 				54D8D26229C9A7BE00EA6F66 /* CornerSpace.swift in Sources */,
 				54D8AEE429C5ED3F00D78857 /* EdgeKey.swift in Sources */,
+				549ADE9B2A0281ED002D5EA8 /* ConvexPointTestSpaceView.swift in Sources */,
 				54EF051829C588D30099AB84 /* Color+hex.swift in Sources */,
 				54DF340D29C05FD600ED1BF8 /* CGSize+Compare.swift in Sources */,
 				54649BB829BF640300A0D526 /* Main+ViewModel.swift in Sources */,
 				54C1E35E29CF5A9300C304CE /* AnchorSolver.swift in Sources */,
 				54EF051A29C588DF0099AB84 /* ColorStore.swift in Sources */,
+				549ADE992A0281E5002D5EA8 /* ConvexPointTestSpace.swift in Sources */,
 				54649BBE29BF9A5D00A0D526 /* Matrix.swift in Sources */,
 				54C1E35929CF479C00C304CE /* AnchorSpaceView.swift in Sources */,
 				54649BAA29BF5FAB00A0D526 /* MainView.swift in Sources */,
@@ -477,7 +528,9 @@
 				54D8D26429C9A81600EA6F66 /* CornerSpaceView.swift in Sources */,
 				54649BC029BF9A6B00A0D526 /* CGPoint+Vector.swift in Sources */,
 				54D8AEDF29C5EBB500D78857 /* TriangulationSpaceView.swift in Sources */,
+				549ADE9D2A028F19002D5EA8 /* ConvexTestSolver.swift in Sources */,
 				54D8D26929C9A8C800EA6F66 /* PointsEditorView.swift in Sources */,
+				54FDDDD429FBF63400082CB1 /* ColliderSolver.swift in Sources */,
 				54DF340F29C0643E00ED1BF8 /* TriangulationData.swift in Sources */,
 				54DF340929C05EB200ED1BF8 /* TriangulationSpace.swift in Sources */,
 				54DA4EDB29CADBFB0055B5C0 /* RoundContourSpace.swift in Sources */,
@@ -486,8 +539,10 @@
 				54DBBC0829C891BB0099F8B7 /* TesselationSpace.swift in Sources */,
 				54649BBB29BF650B00A0D526 /* WorkSpace.swift in Sources */,
 				54DF342E29C085B900ED1BF8 /* ShapeEditorView.swift in Sources */,
+				54FDDDD029FBD55800082CB1 /* ConvexAndConvexSpace.swift in Sources */,
 				54DA4EE029CB1AC90055B5C0 /* SplitSpace.swift in Sources */,
 				54649BA829BF5FAB00A0D526 /* iShapeDebugApp.swift in Sources */,
+				54FDDDD229FBD56500082CB1 /* ConvexAndConvexSpaceView.swift in Sources */,
 				54649BC429BFA0C300A0D526 /* ContourEditor.swift in Sources */,
 				54D8D26729C9A8B600EA6F66 /* PointsEditor.swift in Sources */,
 				54D8D26C29C9A90000EA6F66 /* EditorDot.swift in Sources */,
@@ -496,6 +551,7 @@
 				54D8AEE229C5ED3400D78857 /* Edge.swift in Sources */,
 				54DCB37829E426B70024CDB8 /* CircleCollideSpace.swift in Sources */,
 				54DCB37A29E426C20024CDB8 /* CircleCollideSpaceView.swift in Sources */,
+				54B4574929F1573500C672F9 /* MirrorSpace.swift in Sources */,
 				54D9A75229E2981C0022A971 /* ConvexAndCircleSpace.swift in Sources */,
 				54C1E35729CF478900C304CE /* AnchorSpace.swift in Sources */,
 				54D8AEE929C5F00000D78857 /* TestNavigatorView.swift in Sources */,

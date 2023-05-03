@@ -17,12 +17,15 @@ extension MainView {
         private let cornerSpace = CornerSpace()
         private let roundContourSpace = RoundContourSpace()
         private let convexSpace = ConvexSpace()
+        private let convexPointTestSpace = ConvexPointTestSpace()
+        private let convexAndConvexSpace = ConvexAndConvexSpace()
         private let convexAndCircleSpace = ConvexAndCircleSpace()
         private let circleCollideSpace = CircleCollideSpace()
         private let splitSpace = SplitSpace()
         private let anchorSpace = AnchorSpace()
+        private let mirrorSpace = MirrorSpace()
         
-        var spaces: [WorkSpace] = [.fix, .tringulation, .tesselation, .corner, .roundContour, .convex, .convexAndCircle, .circleCollide, .split, .anchor]
+        var spaces: [WorkSpace] = [.fix, .tringulation, .tesselation, .corner, .roundContour, .convex, .convexPointTest, .convexAndConvex, .convexAndCircle, .circleCollide, .split, .anchor, .mirror]
         private (set) var index = PersistInt(key: "WorkSpaceIndex", nilValue: WorkSpace.fix.rawValue)
         
         
@@ -47,6 +50,10 @@ extension MainView {
                 roundContourSpace.makeView()
             case .convex:
                 convexSpace.makeView()
+            case .convexPointTest:
+                convexPointTestSpace.makeView()
+            case .convexAndConvex:
+                convexAndConvexSpace.makeView()
             case .convexAndCircle:
                 convexAndCircleSpace.makeView()
             case .circleCollide:
@@ -55,6 +62,8 @@ extension MainView {
                 splitSpace.makeView()
             case .anchor:
                 anchorSpace.makeView()
+            case .mirror:
+                mirrorSpace.makeView()
             }
         }
         

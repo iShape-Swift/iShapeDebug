@@ -115,7 +115,7 @@ final class ConvexAndCircleSpace: ObservableObject {
         let cNormal = Vector(
             id: normals.count,
             a: matrix.screen(wordPoint: fixContact.point.cgFloat),
-            b: matrix.screen(wordPoint: (fixContact.point + 5000 * fixContact.normalB).cgFloat)
+            b: matrix.screen(wordPoint: (fixContact.point + 5000 * fixContact.normal).cgFloat)
         )
 
         normals.append(cNormal)
