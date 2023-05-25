@@ -58,11 +58,11 @@ struct ColliderSolver {
         }
 
         if cntB.type == .collide && cntA.type == .collide {
-            if cntB.penetration > cntA.penetration {
-                // A penetrate B
+            if cntB.penetration < cntA.penetration {
+                // B penetrate A
                 return cntB
             } else {
-                // A penetrate B
+                // B penetrate A
                 return cntA
             }
         } else if cntB.type == .collide {
@@ -75,15 +75,15 @@ struct ColliderSolver {
     }
     
     private static func findMinSeparation(a: ConvexCollider, b: ConvexCollider) -> Contact {
-        var contact_0: Contact = Contact(point: .zero, normal: .zero, penetration: .min, type: .outside)
-        var contact_1: Contact = Contact(point: .zero, normal: .zero, penetration: .min, type: .outside)
+        var contact_0: Contact = Contact(point: .zero, normal: .zero, penetration: .max, type: .outside)
+        var contact_1: Contact = Contact(point: .zero, normal: .zero, penetration: .max, type: .outside)
 
         for vert in b.points {
             guard a.box.isContain(point: vert) else {
                 continue
             }
             
-            var sv = Int64.max
+            var sv = Int64.min
             var nv = FixVec.zero
             
             for e in 0..<a.points.count {
@@ -93,16 +93,16 @@ struct ColliderSolver {
                 let d = vert - p
                 let s = n.dotProduct(d)
                 
-                if s < sv {
+                if s < 10 && s > sv {
                     sv = s
                     nv = n
                 }
             }
             
-            if sv >= contact_1.penetration {
+            if sv < contact_1.penetration {
                 let newContact = Contact(point: vert, normal: nv, penetration: sv, type: .collide)
 
-                if newContact.penetration > contact_0.penetration {
+                if newContact.penetration < contact_0.penetration {
                     contact_0 = newContact
                 } else {
                     contact_1 = newContact

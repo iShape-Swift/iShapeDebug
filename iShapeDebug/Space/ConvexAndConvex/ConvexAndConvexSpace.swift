@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import iSpace
-import iNetBox
+import iFixFloat
+@testable import iFixBox
 
 final class ConvexAndConvexSpace: ObservableObject {
     
@@ -26,7 +26,7 @@ final class ConvexAndConvexSpace: ObservableObject {
         }
     }
 
-    var posAy: Float = 0 {
+    var posAy: Float = 10 {
         didSet {
             update()
         }
@@ -44,7 +44,7 @@ final class ConvexAndConvexSpace: ObservableObject {
         }
     }
 
-    var posBy: Float = 0 {
+    var posBy: Float = -10 {
         didSet {
             update()
         }
@@ -52,21 +52,14 @@ final class ConvexAndConvexSpace: ObservableObject {
     
     private var matrix: Matrix = .empty
 
-//    private var aPoly: [CGPoint] = [
-//        CGPoint(x: -20, y: -15),
-//        CGPoint(x: -20, y:  15),
-//        CGPoint(x:   0, y:  20),
-//        CGPoint(x:  20, y:  15),
-//        CGPoint(x:  20, y: -15),
-//        CGPoint(x:   0, y: -20)
-//    ]
     
     private var aPoly: [CGPoint] = [
-        CGPoint(x: -15, y: -15),
-        CGPoint(x: -15, y:  15),
-        CGPoint(x:  15, y:  15),
-        CGPoint(x:  15, y: -15)
+        CGPoint(x: -10, y: -10),
+        CGPoint(x: -10, y:  10),
+        CGPoint(x:  10, y:  10),
+        CGPoint(x:  10, y: -10)
     ]
+    
     
     private var bPoly: [CGPoint] = [
         CGPoint(x: -10, y: -10),
@@ -154,9 +147,9 @@ final class ConvexAndConvexSpace: ObservableObject {
 
         // to world A
 
-        let wA = tA.convert(points: convexA.points)
-        let nmsA = tA.convert(vectors: convexA.normals)
-        let rA = tA.convert(boundary: convexA.box).points()
+        let wA = tA.convertAsPoints(convexA.points)
+        let nmsA = tA.convertAsVectors(convexA.normals)
+        let rA = tA.convert(convexA.boundary).points()
         moveA = matrix.screen(wordPoints: wA.cgFloat)
         rectA = matrix.screen(wordPoints: rA.cgFloat)
         
@@ -174,9 +167,9 @@ final class ConvexAndConvexSpace: ObservableObject {
         
         // to world B
         
-        let wB = tB.convert(points: convexB.points)
-        let nmsB = tB.convert(vectors: convexB.normals)
-        let rB = tB.convert(boundary: convexB.box).points()
+        let wB = tB.convertAsPoints(convexB.points)
+        let nmsB = tB.convertAsVectors(convexB.normals)
+        let rB = tB.convert(convexB.boundary).points()
         moveB = matrix.screen(wordPoints: wB.cgFloat)
         rectB = matrix.screen(wordPoints: rB.cgFloat)
         
@@ -195,23 +188,52 @@ final class ConvexAndConvexSpace: ObservableObject {
 
         self.normals = normalsA + normalsB
 
-        let contact = ColliderSolver.collide(a: convexA, b: convexB, tA: tA, tB: tB)
+        let solver = CollisionSolver()
+        let contact = solver.collide(convexA, convexB, tA: tA, tB: tB)
+
+        let contacts = [contact]
+        
         vertices.removeAll()
 
+        var mi = 0
+        if contacts.count > 1 {
+            for i in 1..<contacts.count {
+                if contacts[i].penetration < contacts[i - 1].penetration {
+                    mi = i
+                }
+            }
+        }
         
+        for i in 0..<contacts.count {
+            let contact = contacts[i]
             let cp = matrix.screen(wordPoint: contact.point.cgFloat)
             let cn = matrix.screen(wordPoint: contact.point.cgFloat + 10 * contact.normal.cgFloat)
 
+            let color: Color = mi == i ? .red : .red.opacity(0.2)
+            
             let normal = Vector(
                 id: normals.count,
                 a: cp,
                 b: cn,
                 stroke: 4,
-                color: .red
+                color: color
             )
             self.vertices.append(cp)
             self.normals.append(normal)
-
-        
+        }
     }
 }
+
+extension Boundary {
+
+    func points() -> [FixVec] {
+        [
+            min,
+            FixVec(min.x, max.y),
+            max,
+            FixVec(max.x, min.y)
+        ]
+    }
+
+}
+

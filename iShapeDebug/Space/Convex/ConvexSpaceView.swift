@@ -41,6 +41,12 @@ struct ConvexSpaceView: View {
                 .size(width: 8, height: 8)
                 .offset(space.center)
                 .foregroundColor(.red)
+            
+            Circle()
+                .size(width: 2 * space.radius, height: 2 * space.radius)
+                .offset(space.center - CGPoint(x: space.radius - 4, y: space.radius - 4))
+                .stroke(style: .init(lineWidth: 2))
+                .foregroundColor(.gray)
         }
     }
 }

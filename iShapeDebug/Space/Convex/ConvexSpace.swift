@@ -26,6 +26,9 @@ final class ConvexSpace: ObservableObject {
     
     @Published
     private (set) var center: CGPoint = .zero
+    
+    @Published
+    private (set) var radius: CGFloat = .zero
 
     @Published
     private (set) var box: [CGPoint] = []
@@ -81,6 +84,8 @@ final class ConvexSpace: ObservableObject {
         box = matrix.screen(wordPoints: [pMin, CGPointMake(pMin.x, pMax.y), pMax, CGPointMake(pMax.x, pMin.y)])
 
         center = matrix.screen(wordPoint: convex.center.cgFloat) - CGPoint(x: 4, y: 4)
+        radius = matrix.screen(word: convex.radius.cgFloat)
+        
         self.normals = normals
     }
 }

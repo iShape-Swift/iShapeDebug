@@ -19,7 +19,9 @@ final class ConvexPointTestSpace: ObservableObject {
     
     private var points: [CGPoint] = [
         CGPoint(x: -20, y: -20),
+        CGPoint(x: -20, y: 0),
         CGPoint(x: -20, y:  20),
+        CGPoint(x:   0, y:  20),
         CGPoint(x:  20, y:  20),
         CGPoint(x:  20, y: -20)
     ]
@@ -75,6 +77,8 @@ final class ConvexPointTestSpace: ObservableObject {
         let convex = ConvexCollider(points: points.fix)
 
         let isContain = ConvexTestSolver.isPointInsideConvexPolygon(point: circleCenter.fix, polygon: convex.points)
+//        let isContain = convex.points.isContain(point: circleCenter.fix)
+//        let isContain = convex.points.isTraingleContain(point: circleCenter.fix)
 
         if isContain {
             ciRadius = matrix.screen(word: circleRadius)

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5412630B2A0EBEE4008BED8F /* iFixBox in Frameworks */ = {isa = PBXBuildFile; productRef = 5412630A2A0EBEE4008BED8F /* iFixBox */; };
+		5412630D2A0EBEE4008BED8F /* iFixFloat in Frameworks */ = {isa = PBXBuildFile; productRef = 5412630C2A0EBEE4008BED8F /* iFixFloat */; };
+		541C1F952A03A38D00E4ACBC /* ColliderSolver2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C1F942A03A38D00E4ACBC /* ColliderSolver2.swift */; };
 		54649BA829BF5FAB00A0D526 /* iShapeDebugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BA729BF5FAB00A0D526 /* iShapeDebugApp.swift */; };
 		54649BAA29BF5FAB00A0D526 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BA929BF5FAB00A0D526 /* MainView.swift */; };
 		54649BAC29BF5FAD00A0D526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54649BAB29BF5FAD00A0D526 /* Assets.xcassets */; };
@@ -68,6 +71,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		541263082A0EBEC0008BED8F /* iFixFloat */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixFloat; path = ../../iBox/iFixFloat; sourceTree = "<group>"; };
+		541263092A0EBED6008BED8F /* iFixBox */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixBox; path = ../../iBox/iFixBox; sourceTree = "<group>"; };
+		541C1F942A03A38D00E4ACBC /* ColliderSolver2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliderSolver2.swift; sourceTree = "<group>"; };
 		54649BA429BF5FAB00A0D526 /* iShapeDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShapeDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54649BA729BF5FAB00A0D526 /* iShapeDebugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShapeDebugApp.swift; sourceTree = "<group>"; };
 		54649BA929BF5FAB00A0D526 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -135,9 +141,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5412630B2A0EBEE4008BED8F /* iFixBox in Frameworks */,
 				54E4FFB229E1A35000804447 /* iNetBox in Frameworks */,
 				54DF341529C079B300ED1BF8 /* iShape in Frameworks */,
 				54E4FFB429E1A35000804447 /* iSpace in Frameworks */,
+				5412630D2A0EBEE4008BED8F /* iFixFloat in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,6 +383,8 @@
 				54DF341129C0673300ED1BF8 /* iShape */,
 				54E4FFAF29E1A31100804447 /* iSpace */,
 				54E4FFB029E1A32B00804447 /* iNetBox */,
+				541263082A0EBEC0008BED8F /* iFixFloat */,
+				541263092A0EBED6008BED8F /* iFixBox */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -430,6 +440,7 @@
 				54FDDDCF29FBD55800082CB1 /* ConvexAndConvexSpace.swift */,
 				54FDDDD129FBD56500082CB1 /* ConvexAndConvexSpaceView.swift */,
 				54FDDDD329FBF63400082CB1 /* ColliderSolver.swift */,
+				541C1F942A03A38D00E4ACBC /* ColliderSolver2.swift */,
 			);
 			path = ConvexAndConvex;
 			sourceTree = "<group>";
@@ -454,6 +465,8 @@
 				54DF341429C079B300ED1BF8 /* iShape */,
 				54E4FFB129E1A35000804447 /* iNetBox */,
 				54E4FFB329E1A35000804447 /* iSpace */,
+				5412630A2A0EBEE4008BED8F /* iFixBox */,
+				5412630C2A0EBEE4008BED8F /* iFixFloat */,
 			);
 			productName = iShapeDebug;
 			productReference = 54649BA429BF5FAB00A0D526 /* iShapeDebug.app */;
@@ -545,6 +558,7 @@
 				54FDDDD229FBD56500082CB1 /* ConvexAndConvexSpaceView.swift in Sources */,
 				54649BC429BFA0C300A0D526 /* ContourEditor.swift in Sources */,
 				54D8D26729C9A8B600EA6F66 /* PointsEditor.swift in Sources */,
+				541C1F952A03A38D00E4ACBC /* ColliderSolver2.swift in Sources */,
 				54D8D26C29C9A90000EA6F66 /* EditorDot.swift in Sources */,
 				54DB42BF29C4DB1400072E51 /* FixSpace.swift in Sources */,
 				54649BC629BFA0D300A0D526 /* ContourEditorView.swift in Sources */,
@@ -781,6 +795,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		5412630A2A0EBEE4008BED8F /* iFixBox */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iFixBox;
+		};
+		5412630C2A0EBEE4008BED8F /* iFixFloat */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iFixFloat;
+		};
 		54DF341429C079B300ED1BF8 /* iShape */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = iShape;
