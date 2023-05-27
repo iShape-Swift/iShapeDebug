@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
-import iSpace
-import iNetBox
+import iFixBox
+import iFixFloat
+
 
 final class ConvexSpace: ObservableObject {
     
@@ -78,14 +79,14 @@ final class ConvexSpace: ObservableObject {
             let e1 = e0 + 10 * nm
             normals[i] = Vector(id: i, a: matrix.screen(wordPoint: e0), b: matrix.screen(wordPoint: e1))
         }
-        let pMax = convex.box.pMax.cgFloat
-        let pMin = convex.box.pMin.cgFloat
-        
-        box = matrix.screen(wordPoints: [pMin, CGPointMake(pMin.x, pMax.y), pMax, CGPointMake(pMax.x, pMin.y)])
-
-        center = matrix.screen(wordPoint: convex.center.cgFloat) - CGPoint(x: 4, y: 4)
-        radius = matrix.screen(word: convex.radius.cgFloat)
-        
-        self.normals = normals
+//        let pMax = convex.box.pMax.cgFloat
+//        let pMin = convex.box.pMin.cgFloat
+//        
+//        box = matrix.screen(wordPoints: [pMin, CGPointMake(pMin.x, pMax.y), pMax, CGPointMake(pMax.x, pMin.y)])
+//
+//        center = matrix.screen(wordPoint: convex.center.cgFloat) - CGPoint(x: 4, y: 4)
+//        radius = matrix.screen(word: convex.radius.cgFloat)
+//        
+//        self.normals = normals
     }
 }

@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import iSpace
-import iNetBox
+import iFixBox
+import iFixFloat
 
 final class ConvexPointTestSpace: ObservableObject {
     
@@ -77,8 +77,6 @@ final class ConvexPointTestSpace: ObservableObject {
         let convex = ConvexCollider(points: points.fix)
 
         let isContain = ConvexTestSolver.isPointInsideConvexPolygon(point: circleCenter.fix, polygon: convex.points)
-//        let isContain = convex.points.isContain(point: circleCenter.fix)
-//        let isContain = convex.points.isTraingleContain(point: circleCenter.fix)
 
         if isContain {
             ciRadius = matrix.screen(word: circleRadius)

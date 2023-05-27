@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import iSpace
-import iNetBox
+import iFixFloat
+import iFixBox
 
 final class ConvexAndCircleSpace: ObservableObject {
     
@@ -97,10 +97,6 @@ final class ConvexAndCircleSpace: ObservableObject {
             let e1 = e0 + 10 * nm
             normals[i] = Vector(id: i, a: matrix.screen(wordPoint: e0), b: matrix.screen(wordPoint: e1))
         }
-        let pMax = convex.box.pMax.cgFloat
-        let pMin = convex.box.pMin.cgFloat
-        
-        box = matrix.screen(wordPoints: [pMin, CGPointMake(pMin.x, pMax.y), pMax, CGPointMake(pMax.x, pMin.y)])
 
         center = matrix.screen(wordPoint: convex.center.cgFloat) - CGPoint(x: 4, y: 4)
         
@@ -108,7 +104,8 @@ final class ConvexAndCircleSpace: ObservableObject {
         ciRadius = matrix.screen(word: circleRadius)
         ciCenter = matrix.screen(wordPoint: circleCenter) - CGPoint(x: ciRadius, y: ciRadius)
         
-        let fixContact = convex.collide(circle: CircleCollider(center: circleCenter.fix, radius: circleRadius.fix))
+        let fixContact = CollisionSolver().collide(CircleCollider(center: circleCenter.fix, radius: circleRadius.fix), convex)
+
         
         contact = matrix.screen(wordPoint: fixContact.point.cgFloat) - CGPoint(x: 4, y: 4)
 

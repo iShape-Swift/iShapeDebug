@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5412630B2A0EBEE4008BED8F /* iFixBox in Frameworks */ = {isa = PBXBuildFile; productRef = 5412630A2A0EBEE4008BED8F /* iFixBox */; };
-		5412630D2A0EBEE4008BED8F /* iFixFloat in Frameworks */ = {isa = PBXBuildFile; productRef = 5412630C2A0EBEE4008BED8F /* iFixFloat */; };
-		541C1F952A03A38D00E4ACBC /* ColliderSolver2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 541C1F942A03A38D00E4ACBC /* ColliderSolver2.swift */; };
+		54315FEB2A2212C6007EE136 /* iConvex in Frameworks */ = {isa = PBXBuildFile; productRef = 54315FEA2A2212C6007EE136 /* iConvex */; };
+		54315FED2A2212C6007EE136 /* iFixBox in Frameworks */ = {isa = PBXBuildFile; productRef = 54315FEC2A2212C6007EE136 /* iFixBox */; };
+		54315FEF2A2212C6007EE136 /* iFixFloat in Frameworks */ = {isa = PBXBuildFile; productRef = 54315FEE2A2212C6007EE136 /* iFixFloat */; };
+		54315FF12A2212C6007EE136 /* iSpace in Frameworks */ = {isa = PBXBuildFile; productRef = 54315FF02A2212C6007EE136 /* iSpace */; };
+		54315FF42A221352007EE136 /* iShape in Frameworks */ = {isa = PBXBuildFile; productRef = 54315FF32A221352007EE136 /* iShape */; };
 		54649BA829BF5FAB00A0D526 /* iShapeDebugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BA729BF5FAB00A0D526 /* iShapeDebugApp.swift */; };
 		54649BAA29BF5FAB00A0D526 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BA929BF5FAB00A0D526 /* MainView.swift */; };
 		54649BAC29BF5FAD00A0D526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54649BAB29BF5FAD00A0D526 /* Assets.xcassets */; };
@@ -56,24 +58,22 @@
 		54DF340929C05EB200ED1BF8 /* TriangulationSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340829C05EB200ED1BF8 /* TriangulationSpace.swift */; };
 		54DF340D29C05FD600ED1BF8 /* CGSize+Compare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340C29C05FD600ED1BF8 /* CGSize+Compare.swift */; };
 		54DF340F29C0643E00ED1BF8 /* TriangulationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF340E29C0643E00ED1BF8 /* TriangulationData.swift */; };
-		54DF341529C079B300ED1BF8 /* iShape in Frameworks */ = {isa = PBXBuildFile; productRef = 54DF341429C079B300ED1BF8 /* iShape */; };
 		54DF342C29C0844300ED1BF8 /* ShapeEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF342B29C0844300ED1BF8 /* ShapeEditor.swift */; };
 		54DF342E29C085B900ED1BF8 /* ShapeEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54DF342D29C085B900ED1BF8 /* ShapeEditorView.swift */; };
-		54E4FFB229E1A35000804447 /* iNetBox in Frameworks */ = {isa = PBXBuildFile; productRef = 54E4FFB129E1A35000804447 /* iNetBox */; };
-		54E4FFB429E1A35000804447 /* iSpace in Frameworks */ = {isa = PBXBuildFile; productRef = 54E4FFB329E1A35000804447 /* iSpace */; };
 		54E4FFB729E1A50D00804447 /* ConvexSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4FFB629E1A50D00804447 /* ConvexSpace.swift */; };
 		54E4FFB929E1A51B00804447 /* ConvexSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E4FFB829E1A51B00804447 /* ConvexSpaceView.swift */; };
 		54EF051829C588D30099AB84 /* Color+hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF051729C588D30099AB84 /* Color+hex.swift */; };
 		54EF051A29C588DF0099AB84 /* ColorStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EF051929C588DF0099AB84 /* ColorStore.swift */; };
 		54FDDDD029FBD55800082CB1 /* ConvexAndConvexSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDDDCF29FBD55800082CB1 /* ConvexAndConvexSpace.swift */; };
 		54FDDDD229FBD56500082CB1 /* ConvexAndConvexSpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDDDD129FBD56500082CB1 /* ConvexAndConvexSpaceView.swift */; };
-		54FDDDD429FBF63400082CB1 /* ColliderSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FDDDD329FBF63400082CB1 /* ColliderSolver.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		541263082A0EBEC0008BED8F /* iFixFloat */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixFloat; path = ../../iBox/iFixFloat; sourceTree = "<group>"; };
-		541263092A0EBED6008BED8F /* iFixBox */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixBox; path = ../../iBox/iFixBox; sourceTree = "<group>"; };
-		541C1F942A03A38D00E4ACBC /* ColliderSolver2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliderSolver2.swift; sourceTree = "<group>"; };
+		54315FE62A221284007EE136 /* iConvex */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iConvex; path = ../../iBox/iConvex; sourceTree = "<group>"; };
+		54315FE72A221290007EE136 /* iFixFloat */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixFloat; path = ../../iBox/iFixFloat; sourceTree = "<group>"; };
+		54315FE82A2212A7007EE136 /* iSpace */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iSpace; path = ../../iBox/iSpace; sourceTree = "<group>"; };
+		54315FE92A2212B4007EE136 /* iFixBox */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixBox; path = ../../iBox/iFixBox; sourceTree = "<group>"; };
+		54315FF22A22132E007EE136 /* iShape */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iShape; path = ../iShape; sourceTree = "<group>"; };
 		54649BA429BF5FAB00A0D526 /* iShapeDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShapeDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54649BA729BF5FAB00A0D526 /* iShapeDebugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShapeDebugApp.swift; sourceTree = "<group>"; };
 		54649BA929BF5FAB00A0D526 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -122,18 +122,14 @@
 		54DF340829C05EB200ED1BF8 /* TriangulationSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangulationSpace.swift; sourceTree = "<group>"; };
 		54DF340C29C05FD600ED1BF8 /* CGSize+Compare.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGSize+Compare.swift"; sourceTree = "<group>"; };
 		54DF340E29C0643E00ED1BF8 /* TriangulationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangulationData.swift; sourceTree = "<group>"; };
-		54DF341129C0673300ED1BF8 /* iShape */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iShape; path = ../iShape; sourceTree = "<group>"; };
 		54DF342B29C0844300ED1BF8 /* ShapeEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeEditor.swift; sourceTree = "<group>"; };
 		54DF342D29C085B900ED1BF8 /* ShapeEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeEditorView.swift; sourceTree = "<group>"; };
-		54E4FFAF29E1A31100804447 /* iSpace */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iSpace; path = ../../iBox/iSpace; sourceTree = "<group>"; };
-		54E4FFB029E1A32B00804447 /* iNetBox */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iNetBox; path = ../../iBox/iNetBox; sourceTree = "<group>"; };
 		54E4FFB629E1A50D00804447 /* ConvexSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexSpace.swift; sourceTree = "<group>"; };
 		54E4FFB829E1A51B00804447 /* ConvexSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexSpaceView.swift; sourceTree = "<group>"; };
 		54EF051729C588D30099AB84 /* Color+hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+hex.swift"; sourceTree = "<group>"; };
 		54EF051929C588DF0099AB84 /* ColorStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStore.swift; sourceTree = "<group>"; };
 		54FDDDCF29FBD55800082CB1 /* ConvexAndConvexSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexAndConvexSpace.swift; sourceTree = "<group>"; };
 		54FDDDD129FBD56500082CB1 /* ConvexAndConvexSpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvexAndConvexSpaceView.swift; sourceTree = "<group>"; };
-		54FDDDD329FBF63400082CB1 /* ColliderSolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColliderSolver.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,11 +137,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5412630B2A0EBEE4008BED8F /* iFixBox in Frameworks */,
-				54E4FFB229E1A35000804447 /* iNetBox in Frameworks */,
-				54DF341529C079B300ED1BF8 /* iShape in Frameworks */,
-				54E4FFB429E1A35000804447 /* iSpace in Frameworks */,
-				5412630D2A0EBEE4008BED8F /* iFixFloat in Frameworks */,
+				54315FF42A221352007EE136 /* iShape in Frameworks */,
+				54315FEF2A2212C6007EE136 /* iFixFloat in Frameworks */,
+				54315FED2A2212C6007EE136 /* iFixBox in Frameworks */,
+				54315FEB2A2212C6007EE136 /* iConvex in Frameworks */,
+				54315FF12A2212C6007EE136 /* iSpace in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,11 +376,11 @@
 		54DF341029C0673300ED1BF8 /* Packages */ = {
 			isa = PBXGroup;
 			children = (
-				54DF341129C0673300ED1BF8 /* iShape */,
-				54E4FFAF29E1A31100804447 /* iSpace */,
-				54E4FFB029E1A32B00804447 /* iNetBox */,
-				541263082A0EBEC0008BED8F /* iFixFloat */,
-				541263092A0EBED6008BED8F /* iFixBox */,
+				54315FE62A221284007EE136 /* iConvex */,
+				54315FE72A221290007EE136 /* iFixFloat */,
+				54315FE82A2212A7007EE136 /* iSpace */,
+				54315FE92A2212B4007EE136 /* iFixBox */,
+				54315FF22A22132E007EE136 /* iShape */,
 			);
 			name = Packages;
 			sourceTree = "<group>";
@@ -439,8 +435,6 @@
 			children = (
 				54FDDDCF29FBD55800082CB1 /* ConvexAndConvexSpace.swift */,
 				54FDDDD129FBD56500082CB1 /* ConvexAndConvexSpaceView.swift */,
-				54FDDDD329FBF63400082CB1 /* ColliderSolver.swift */,
-				541C1F942A03A38D00E4ACBC /* ColliderSolver2.swift */,
 			);
 			path = ConvexAndConvex;
 			sourceTree = "<group>";
@@ -462,11 +456,11 @@
 			);
 			name = iShapeDebug;
 			packageProductDependencies = (
-				54DF341429C079B300ED1BF8 /* iShape */,
-				54E4FFB129E1A35000804447 /* iNetBox */,
-				54E4FFB329E1A35000804447 /* iSpace */,
-				5412630A2A0EBEE4008BED8F /* iFixBox */,
-				5412630C2A0EBEE4008BED8F /* iFixFloat */,
+				54315FEA2A2212C6007EE136 /* iConvex */,
+				54315FEC2A2212C6007EE136 /* iFixBox */,
+				54315FEE2A2212C6007EE136 /* iFixFloat */,
+				54315FF02A2212C6007EE136 /* iSpace */,
+				54315FF32A221352007EE136 /* iShape */,
 			);
 			productName = iShapeDebug;
 			productReference = 54649BA429BF5FAB00A0D526 /* iShapeDebug.app */;
@@ -543,7 +537,6 @@
 				54D8AEDF29C5EBB500D78857 /* TriangulationSpaceView.swift in Sources */,
 				549ADE9D2A028F19002D5EA8 /* ConvexTestSolver.swift in Sources */,
 				54D8D26929C9A8C800EA6F66 /* PointsEditorView.swift in Sources */,
-				54FDDDD429FBF63400082CB1 /* ColliderSolver.swift in Sources */,
 				54DF340F29C0643E00ED1BF8 /* TriangulationData.swift in Sources */,
 				54DF340929C05EB200ED1BF8 /* TriangulationSpace.swift in Sources */,
 				54DA4EDB29CADBFB0055B5C0 /* RoundContourSpace.swift in Sources */,
@@ -558,7 +551,6 @@
 				54FDDDD229FBD56500082CB1 /* ConvexAndConvexSpaceView.swift in Sources */,
 				54649BC429BFA0C300A0D526 /* ContourEditor.swift in Sources */,
 				54D8D26729C9A8B600EA6F66 /* PointsEditor.swift in Sources */,
-				541C1F952A03A38D00E4ACBC /* ColliderSolver2.swift in Sources */,
 				54D8D26C29C9A90000EA6F66 /* EditorDot.swift in Sources */,
 				54DB42BF29C4DB1400072E51 /* FixSpace.swift in Sources */,
 				54649BC629BFA0D300A0D526 /* ContourEditorView.swift in Sources */,
@@ -699,7 +691,7 @@
 				CODE_SIGN_ENTITLEMENTS = iShapeDebug/iShapeDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iShapeDebug/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "../iShape iShapeDebug/Preview\\ Content";
 				DEVELOPMENT_TEAM = HPV9E52JPX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -739,7 +731,7 @@
 				CODE_SIGN_ENTITLEMENTS = iShapeDebug/iShapeDebug.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"iShapeDebug/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "../iShape iShapeDebug/Preview\\ Content";
 				DEVELOPMENT_TEAM = HPV9E52JPX;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -795,25 +787,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		5412630A2A0EBEE4008BED8F /* iFixBox */ = {
+		54315FEA2A2212C6007EE136 /* iConvex */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iConvex;
+		};
+		54315FEC2A2212C6007EE136 /* iFixBox */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = iFixBox;
 		};
-		5412630C2A0EBEE4008BED8F /* iFixFloat */ = {
+		54315FEE2A2212C6007EE136 /* iFixFloat */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = iFixFloat;
 		};
-		54DF341429C079B300ED1BF8 /* iShape */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = iShape;
-		};
-		54E4FFB129E1A35000804447 /* iNetBox */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = iNetBox;
-		};
-		54E4FFB329E1A35000804447 /* iSpace */ = {
+		54315FF02A2212C6007EE136 /* iSpace */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = iSpace;
+		};
+		54315FF32A221352007EE136 /* iShape */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = iShape;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

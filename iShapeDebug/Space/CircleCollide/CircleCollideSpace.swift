@@ -6,8 +6,8 @@
 //
 
 import SwiftUI
-import iSpace
-import iNetBox
+import iFixBox
+import iFixFloat
 
 final class CircleCollideSpace: ObservableObject {
 
@@ -82,9 +82,9 @@ final class CircleCollideSpace: ObservableObject {
         let colliderA = CircleCollider(center: circleCenterA.fix, radius: circleRadiusA.fix)
         let colliderB = CircleCollider(center: circleCenterB.fix, radius: circleRadiusB.fix)
         
-        let fixContact = colliderA.collide(circle: colliderB)
+        let fixContact = CollisionSolver().collide(colliderA, colliderB)
         
-        if fixContact.type == .outside {
+        if fixContact.status == .outside {
             contact = nil
             normal = nil
         } else {

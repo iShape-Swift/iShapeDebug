@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import iShape
+import iFixFloat
 
 final class CornerSpace: ObservableObject {
     
@@ -58,28 +58,28 @@ final class CornerSpace: ObservableObject {
     }
     
     private func update(points: [CGPoint]) {
-        let screenPoints = matrix.screen(wordPoints: points)
-
-        var result = [Vector]()
-        
-        result.append(Vector(id: 0, a: screenPoints[1], b: screenPoints[0]))
-        result.append(Vector(id: 1, a: screenPoints[1], b: screenPoints[2]))
-        
-        let dotRadius: Float = 8
-        
-        let a = Point(screenPoints[0])
-        let b = Point(screenPoints[1])
-        let c = Point(screenPoints[2])
-        
-        let p = Morph.cornerCenter(a, b, c, radius: maxRadius)
-        let cp = CGPoint(x: CGFloat(p.x - dotRadius), y: CGFloat(p.y - dotRadius))
-        
-        self.center = Dot(id: 0, center: cp, radius: CGFloat(dotRadius), color: .red)
-
-        let roundPath = Morph.roundCorner(a, b, c, radius: maxRadius, ratio: 0.2)
-        
-        self.roundPoints = [CGPoint](roundPath)
-        self.cornerEdges = result
+//        let screenPoints = matrix.screen(wordPoints: points)
+//
+//        var result = [Vector]()
+//        
+//        result.append(Vector(id: 0, a: screenPoints[1], b: screenPoints[0]))
+//        result.append(Vector(id: 1, a: screenPoints[1], b: screenPoints[2]))
+//        
+//        let dotRadius: Float = 8
+//        
+//        let a = Point(screenPoints[0])
+//        let b = Point(screenPoints[1])
+//        let c = Point(screenPoints[2])
+//        
+//        let p = Morph.cornerCenter(a, b, c, radius: maxRadius)
+//        let cp = CGPoint(x: CGFloat(p.x - dotRadius), y: CGFloat(p.y - dotRadius))
+//        
+//        self.center = Dot(id: 0, center: cp, radius: CGFloat(dotRadius), color: .red)
+//
+//        let roundPath = Morph.roundCorner(a, b, c, radius: maxRadius, ratio: 0.2)
+//        
+//        self.roundPoints = [CGPoint](roundPath)
+//        self.cornerEdges = result
     }
     
 }

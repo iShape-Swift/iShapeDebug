@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import iSpace
 import iShape
 
 final class RoundContourSpace: ObservableObject {
