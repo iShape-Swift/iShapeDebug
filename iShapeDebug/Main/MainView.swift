@@ -2,7 +2,7 @@
 //  MainView.swift
 //  iShapeDebug
 //
-//  Created by Nail Sharipov on 13.03.2023.
+//  Created by Nail Sharipov on 10.07.2023.
 //
 
 import SwiftUI
@@ -10,18 +10,25 @@ import SwiftUI
 struct MainView: View {
     
     @StateObject
-    var viewModel = ViewModel()
+    var viewModel = MainViewModel()
     
     var body: some View {
         NavigationSplitView {
-            List($viewModel.spaces, selection: $viewModel.selection) { $space in
-                NavigationLink(space.title, value: space)
+            List(viewModel.scenes, selection: $viewModel.sceneId) { scene in
+                Text(scene.title)
+            }
+        } content: {
+            ZStack {
+                Color.pink
+                List(viewModel.tests, selection: $viewModel.testId) { test in
+                    Text(test.title)
+                }
             }
         } detail: {
-            viewModel.contentView
+            viewModel.sceneView
         }
-        .navigationTitle("Title")
-        .navigationSubtitle("Title")
+        .navigationTitle("Shape App")
+        .navigationSubtitle("Test")
         .onAppear() {
             viewModel.onAppear()
         }
