@@ -29,7 +29,7 @@ final class EdgeScene: ObservableObject, SceneContainer {
 
     private (set) var edgeA: Edge?
     private (set) var edgeB: Edge?
-    private (set) var crossVec: CGPoint?
+    private (set) var crossVecs: [CGPoint] = []
     private (set) var crossResult = ""
     
     private (set) var colorA: Color = EdgeScene.colorA
@@ -88,8 +88,13 @@ final class EdgeScene: ObservableObject, SceneContainer {
     }
 
     func solve() {
+        defer {
+            self.objectWillChange.send()
+        }
+        
         let points = editor.points
         let vecs = points.map { $0.fixVec }
+        crossVecs.removeAll()
         guard !vecs.isEmpty else {
             edgeA = nil
             edgeB = nil
@@ -106,31 +111,41 @@ final class EdgeScene: ObservableObject, SceneContainer {
         let edB = FixEdge(e0: vecs[2], e1: vecs[3])
         
         let cross = edA.cross(edB)
+        var pnts = [FixVec]()
+        
         
         switch cross.type {
         case .not_cross:
             crossResult = "not cross or parallel"
         case .pure:
             crossResult = "middle cross : \(cross.point.floatString)"
+            pnts.append(cross.point)
         case .end_a:
             crossResult = "A end cross : \(cross.point.floatString)"
+            pnts.append(cross.point)
         case .end_b:
             crossResult = "B end cross : \(cross.point.floatString)"
-        case .common_end:
-            crossResult = "ends cross : \(cross.point.floatString)"
+            pnts.append(cross.point)
+        case .overlay_a:
+            crossResult = "A overlay B"
+        case .overlay_b:
+            crossResult = "B overlay A"
+        case .penetrate:
+            crossResult = "penetrate A: \(cross.point.floatString) B: \(cross.second.floatString)"
+            pnts.append(cross.point)
+            pnts.append(cross.second)
         }
 
         if cross.type != .not_cross {
             colorA = EdgeScene.colorA
             colorB = EdgeScene.colorB
-            crossVec = matrix.screen(worldPoint: cross.point.cgPoint)
         } else {
             colorA = EdgeScene.colorA.opacity(0.8)
             colorB = EdgeScene.colorB.opacity(0.8)
-            crossVec = nil
         }
+
+        crossVecs = matrix.screen(worldPoints: pnts.map({ $0.cgPoint }) )
         
-        self.objectWillChange.send()
     }
     
     
@@ -149,9 +164,9 @@ private extension FixVec {
     
     var floatString: String {
         let p = self.float
-        let x = String(format: "%.2f", p.x)
-        let y = String(format: "%.2f", p.y)
-        return "(\(x), \(y)"
+        let x = String(format: "%.1f", p.x)
+        let y = String(format: "%.1f", p.y)
+        return "(\(x), \(y))"
     }
 
 }

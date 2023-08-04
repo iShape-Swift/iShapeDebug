@@ -54,8 +54,8 @@ struct EdgeSceneView: View {
                     path.addLine(to: edge.b)
                 }.stroke(style: .init(lineWidth: 4, lineCap: .round)).foregroundColor(scene.colorB)
             }
-            if let crossVec = scene.crossVec {
-                CircleView(position: crossVec, radius: 6, color: .red)
+            ForEach(0..<scene.crossVecs.count, id: \.self) { id in
+                CircleView(position: scene.crossVecs[id], radius: 6, color: .red)
             }
         }.onAppear() {
             scene.onAppear()
