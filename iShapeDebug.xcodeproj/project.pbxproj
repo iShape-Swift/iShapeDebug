@@ -12,6 +12,8 @@
 		54649BA829BF5FAB00A0D526 /* iShapeDebugApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54649BA729BF5FAB00A0D526 /* iShapeDebugApp.swift */; };
 		54649BAC29BF5FAD00A0D526 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54649BAB29BF5FAD00A0D526 /* Assets.xcassets */; };
 		54649BB029BF5FAD00A0D526 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54649BAF29BF5FAD00A0D526 /* Preview Assets.xcassets */; };
+		54D5AFF72A854DCA00F02800 /* iShapeDebugTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5AFF62A854DCA00F02800 /* iShapeDebugTests.swift */; };
+		54D5AFFE2A854DE500F02800 /* EdgeCrossTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D5AFFD2A854DE500F02800 /* EdgeCrossTests.swift */; };
 		54EBAF7E2A5BF9B700E4E31F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF7D2A5BF9B700E4E31F /* MainView.swift */; };
 		54EBAF802A5BF9C800E4E31F /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF7F2A5BF9C800E4E31F /* MainViewModel.swift */; };
 		54EBAF832A5BFA1900E4E31F /* SceneContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF822A5BFA1900E4E31F /* SceneContainer.swift */; };
@@ -25,12 +27,25 @@
 		54EBAF962A5C023C00E4E31F /* EdgeTestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF952A5C023C00E4E31F /* EdgeTestStore.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		54D5AFF82A854DCA00F02800 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 54649B9C29BF5FAB00A0D526 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 54649BA329BF5FAB00A0D526;
+			remoteInfo = iShapeDebug;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		54649BA429BF5FAB00A0D526 /* iShapeDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iShapeDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		54649BA729BF5FAB00A0D526 /* iShapeDebugApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShapeDebugApp.swift; sourceTree = "<group>"; };
 		54649BAB29BF5FAD00A0D526 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		54649BAD29BF5FAD00A0D526 /* iShapeDebug.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iShapeDebug.entitlements; sourceTree = "<group>"; };
 		54649BAF29BF5FAD00A0D526 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		54D5AFF42A854DCA00F02800 /* iShapeDebugTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iShapeDebugTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		54D5AFF62A854DCA00F02800 /* iShapeDebugTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iShapeDebugTests.swift; sourceTree = "<group>"; };
+		54D5AFFD2A854DE500F02800 /* EdgeCrossTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeCrossTests.swift; sourceTree = "<group>"; };
 		54EBAF782A5BF8C600E4E31F /* iFixFloat */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iFixFloat; path = ../../iFixFloat; sourceTree = "<group>"; };
 		54EBAF792A5BF8D900E4E31F /* iShape */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iShape; path = ../../iShape; sourceTree = "<group>"; };
 		54EBAF7A2A5BF8E400E4E31F /* iDebug */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = iDebug; path = ../../iDebug; sourceTree = "<group>"; };
@@ -57,6 +72,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54D5AFF12A854DCA00F02800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -65,6 +87,7 @@
 			children = (
 				54DF341029C0673300ED1BF8 /* Packages */,
 				54649BA629BF5FAB00A0D526 /* iShapeDebug */,
+				54D5AFF52A854DCA00F02800 /* iShapeDebugTests */,
 				54649BA529BF5FAB00A0D526 /* Products */,
 				54DF341329C079B300ED1BF8 /* Frameworks */,
 			);
@@ -74,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				54649BA429BF5FAB00A0D526 /* iShapeDebug.app */,
+				54D5AFF42A854DCA00F02800 /* iShapeDebugTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -98,6 +122,15 @@
 				54649BAF29BF5FAD00A0D526 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		54D5AFF52A854DCA00F02800 /* iShapeDebugTests */ = {
+			isa = PBXGroup;
+			children = (
+				54D5AFF62A854DCA00F02800 /* iShapeDebugTests.swift */,
+				54D5AFFD2A854DE500F02800 /* EdgeCrossTests.swift */,
+			);
+			path = iShapeDebugTests;
 			sourceTree = "<group>";
 		};
 		54DF341029C0673300ED1BF8 /* Packages */ = {
@@ -189,6 +222,24 @@
 			productReference = 54649BA429BF5FAB00A0D526 /* iShapeDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
+		54D5AFF32A854DCA00F02800 /* iShapeDebugTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54D5AFFC2A854DCA00F02800 /* Build configuration list for PBXNativeTarget "iShapeDebugTests" */;
+			buildPhases = (
+				54D5AFF02A854DCA00F02800 /* Sources */,
+				54D5AFF12A854DCA00F02800 /* Frameworks */,
+				54D5AFF22A854DCA00F02800 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				54D5AFF92A854DCA00F02800 /* PBXTargetDependency */,
+			);
+			name = iShapeDebugTests;
+			productName = iShapeDebugTests;
+			productReference = 54D5AFF42A854DCA00F02800 /* iShapeDebugTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -196,11 +247,15 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1420;
+				LastSwiftUpdateCheck = 1430;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
 					54649BA329BF5FAB00A0D526 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					54D5AFF32A854DCA00F02800 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 54649BA329BF5FAB00A0D526;
 					};
 				};
 			};
@@ -218,6 +273,7 @@
 			projectRoot = "";
 			targets = (
 				54649BA329BF5FAB00A0D526 /* iShapeDebug */,
+				54D5AFF32A854DCA00F02800 /* iShapeDebugTests */,
 			);
 		};
 /* End PBXProject section */
@@ -229,6 +285,13 @@
 			files = (
 				54649BB029BF5FAD00A0D526 /* Preview Assets.xcassets in Resources */,
 				54649BAC29BF5FAD00A0D526 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54D5AFF22A854DCA00F02800 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,7 +316,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54D5AFF02A854DCA00F02800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54D5AFF72A854DCA00F02800 /* iShapeDebugTests.swift in Sources */,
+				54D5AFFE2A854DE500F02800 /* EdgeCrossTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		54D5AFF92A854DCA00F02800 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 54649BA329BF5FAB00A0D526 /* iShapeDebug */;
+			targetProxy = 54D5AFF82A854DCA00F02800 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		54649BB129BF5FAD00A0D526 /* Debug */ = {
@@ -445,6 +525,44 @@
 			};
 			name = Release;
 		};
+		54D5AFFA2A854DCA00F02800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPV9E52JPX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nail.iShapeDebugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iShapeDebug.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iShapeDebug";
+			};
+			name = Debug;
+		};
+		54D5AFFB2A854DCA00F02800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = HPV9E52JPX;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nail.iShapeDebugTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iShapeDebug.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iShapeDebug";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -462,6 +580,15 @@
 			buildConfigurations = (
 				54649BB429BF5FAD00A0D526 /* Debug */,
 				54649BB529BF5FAD00A0D526 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54D5AFFC2A854DCA00F02800 /* Build configuration list for PBXNativeTarget "iShapeDebugTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54D5AFFA2A854DCA00F02800 /* Debug */,
+				54D5AFFB2A854DCA00F02800 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
