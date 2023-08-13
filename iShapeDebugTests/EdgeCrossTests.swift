@@ -111,4 +111,24 @@ final class EdgeCrossTests: XCTestCase {
         XCTAssertEqual(EdgeCrossType.not_cross, result.type)
     }
     
+    func test_RealCase_1() throws {
+        let eA = FixEdge(e0: FixVec(7256, -14637), e1: FixVec(7454, -15045))
+        let eB = FixEdge(e0: FixVec(7343, -14833), e1: FixVec(7506, -15144))
+        
+        let result = eA.cross(eB)
+        
+        XCTAssertTrue(eA.isBoxContain(result.point))
+        XCTAssertTrue(eB.isBoxContain(result.point))
+        
+        XCTAssertEqual(EdgeCrossType.pure, result.type)
+    }
+    
+}
+
+private extension FixEdge {
+    func isBoxContain(_ p: FixVec) -> Bool {
+        let xCondition = e0.x <= p.x && p.x <= e1.x || e1.x <= p.x && p.x <= e0.x
+        let yCondition = e0.y <= p.y && p.y <= e1.y || e1.y <= p.y && p.y <= e0.y
+        return xCondition && yCondition
+    }
 }
