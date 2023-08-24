@@ -48,7 +48,7 @@ final class EdgeCrossTests: XCTestCase {
     }
     
     func test_bigCross_3() throws {
-        let s: Int64 = 1024_000_00
+        let s: Int64 = 1024_000_000
         let q: Int64 = s / 2
         let eA = FixEdge(e0: FixVec(-s, -s), e1: FixVec(s, s))
         let eB = FixEdge(e0: FixVec(q, -s), e1: FixVec(q, s))
@@ -57,7 +57,7 @@ final class EdgeCrossTests: XCTestCase {
         
         XCTAssertEqual(EdgeCrossType.pure, result.type)
 
-        XCTAssertEqual(FixVec(51200000, 51200000), result.point)
+        XCTAssertEqual(FixVec(512_000_000, 512_000_000), result.point)
     }
     
     func test_leftEnd() throws {
@@ -121,6 +121,18 @@ final class EdgeCrossTests: XCTestCase {
         XCTAssertTrue(eB.isBoxContain(result.point))
         
         XCTAssertEqual(EdgeCrossType.pure, result.type)
+    }
+    
+    func test_Penetrate_0() throws {
+        let s: Int64 = 1024
+        let eA = FixEdge(e0: FixVec(-s, 0), e1: FixVec(s / 2, 0))
+        let eB = FixEdge(e0: FixVec( 0, 0), e1: FixVec(s, 0))
+        
+        let result = eA.cross(eB)
+        
+        XCTAssertEqual(EdgeCrossType.penetrate, result.type)
+        XCTAssertEqual(FixVec(0, 0), result.point)
+        XCTAssertEqual(FixVec(512, 0), result.second)
     }
     
 }
