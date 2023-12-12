@@ -112,37 +112,35 @@ final class EdgeScene: ObservableObject, SceneContainer {
         
         let cross = edA.cross(edB)
         var pnts = [FixVec]()
-        
-        
-        switch cross.type {
-        case .not_cross:
-            crossResult = "not cross or parallel"
-        case .pure:
-            crossResult = "middle cross : \(cross.point.floatString)"
-            pnts.append(cross.point)
-        case .end_a:
-            crossResult = "A end cross : \(cross.point.floatString)"
-            pnts.append(cross.point)
-        case .end_b:
-            crossResult = "B end cross : \(cross.point.floatString)"
-            pnts.append(cross.point)
-        case .overlay_a:
-            crossResult = "A overlay B"
-        case .overlay_b:
-            crossResult = "B overlay A"
-        case .penetrate:
-            crossResult = "penetrate A: \(cross.point.floatString) B: \(cross.second.floatString)"
-            pnts.append(cross.point)
-            pnts.append(cross.second)
-        }
 
-        if cross.type != .not_cross {
-            colorA = EdgeScene.colorA
-            colorB = EdgeScene.colorB
-        } else {
+        if let cross = cross {
+            switch cross.type {
+            case .pure:
+                crossResult = "middle cross : \(cross.point.floatString)"
+                pnts.append(cross.point)
+            case .end_a:
+                crossResult = "A end cross : \(cross.point.floatString)"
+                pnts.append(cross.point)
+            case .end_b:
+                crossResult = "B end cross : \(cross.point.floatString)"
+                pnts.append(cross.point)
+            case .overlay_a:
+                crossResult = "A overlay B"
+            case .overlay_b:
+                crossResult = "B overlay A"
+            case .penetrate:
+                crossResult = "penetrate A: \(cross.point.floatString) B: \(cross.second.floatString)"
+                pnts.append(cross.point)
+                pnts.append(cross.second)
+            }
             colorA = EdgeScene.colorA.opacity(0.8)
             colorB = EdgeScene.colorB.opacity(0.8)
+        } else {
+            crossResult = "not cross or parallel"
+            colorA = EdgeScene.colorA
+            colorB = EdgeScene.colorB
         }
+        
 
         crossVecs = matrix.screen(worldPoints: pnts.map({ $0.cgPoint }) )
         
