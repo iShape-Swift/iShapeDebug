@@ -21,10 +21,7 @@
 		54EBAF892A5BFBA500E4E31F /* AreaScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF882A5BFBA500E4E31F /* AreaScene.swift */; };
 		54EBAF8B2A5BFBB300E4E31F /* AreaSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF8A2A5BFBB300E4E31F /* AreaSceneView.swift */; };
 		54EBAF8D2A5BFBEA00E4E31F /* AreaTestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF8C2A5BFBEA00E4E31F /* AreaTestStore.swift */; };
-		54EBAF902A5BFEE800E4E31F /* EdgeScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF8F2A5BFEE800E4E31F /* EdgeScene.swift */; };
-		54EBAF922A5BFEF500E4E31F /* EdgeSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF912A5BFEF500E4E31F /* EdgeSceneView.swift */; };
 		54EBAF942A5C004400E4E31F /* iDebug in Frameworks */ = {isa = PBXBuildFile; productRef = 54EBAF932A5C004400E4E31F /* iDebug */; };
-		54EBAF962A5C023C00E4E31F /* EdgeTestStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54EBAF952A5C023C00E4E31F /* EdgeTestStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +53,6 @@
 		54EBAF882A5BFBA500E4E31F /* AreaScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaScene.swift; sourceTree = "<group>"; };
 		54EBAF8A2A5BFBB300E4E31F /* AreaSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaSceneView.swift; sourceTree = "<group>"; };
 		54EBAF8C2A5BFBEA00E4E31F /* AreaTestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreaTestStore.swift; sourceTree = "<group>"; };
-		54EBAF8F2A5BFEE800E4E31F /* EdgeScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeScene.swift; sourceTree = "<group>"; };
-		54EBAF912A5BFEF500E4E31F /* EdgeSceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeSceneView.swift; sourceTree = "<group>"; };
-		54EBAF952A5C023C00E4E31F /* EdgeTestStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EdgeTestStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +156,6 @@
 		54EBAF812A5BFA0A00E4E31F /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				54EBAF8E2A5BFE4400E4E31F /* Edge */,
 				54EBAF872A5BFA8500E4E31F /* Area */,
 				54EBAF822A5BFA1900E4E31F /* SceneContainer.swift */,
 			);
@@ -185,16 +178,6 @@
 				54EBAF8C2A5BFBEA00E4E31F /* AreaTestStore.swift */,
 			);
 			path = Area;
-			sourceTree = "<group>";
-		};
-		54EBAF8E2A5BFE4400E4E31F /* Edge */ = {
-			isa = PBXGroup;
-			children = (
-				54EBAF8F2A5BFEE800E4E31F /* EdgeScene.swift */,
-				54EBAF912A5BFEF500E4E31F /* EdgeSceneView.swift */,
-				54EBAF952A5C023C00E4E31F /* EdgeTestStore.swift */,
-			);
-			path = Edge;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,9 +290,6 @@
 				54649BA829BF5FAB00A0D526 /* iShapeDebugApp.swift in Sources */,
 				54EBAF7E2A5BF9B700E4E31F /* MainView.swift in Sources */,
 				54EBAF8D2A5BFBEA00E4E31F /* AreaTestStore.swift in Sources */,
-				54EBAF962A5C023C00E4E31F /* EdgeTestStore.swift in Sources */,
-				54EBAF902A5BFEE800E4E31F /* EdgeScene.swift in Sources */,
-				54EBAF922A5BFEF500E4E31F /* EdgeSceneView.swift in Sources */,
 				54EBAF802A5BF9C800E4E31F /* MainViewModel.swift in Sources */,
 				54EBAF862A5BFA4000E4E31F /* TestStore.swift in Sources */,
 				54EBAF8B2A5BFBB300E4E31F /* AreaSceneView.swift in Sources */,

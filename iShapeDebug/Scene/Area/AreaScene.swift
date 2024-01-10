@@ -79,7 +79,7 @@ final class AreaScene: ObservableObject, SceneContainer {
         let vecs = points.map { $0.fixVec }
         guard !vecs.isEmpty else { return }
         
-        let area = vecs.area
+        let area = vecs.fixArea
         self.polygon = matrix.screen(worldPoints: points)
         self.area = String(format: "%.2f", area.float)
         self.areaPos = matrix.screen(worldPoint: points.reduce(.zero, { $0 + $1 }) / CGFloat(points.count))
